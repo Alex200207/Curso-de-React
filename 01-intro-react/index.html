@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script><!--babel traduce un codigo
+    moderno a lo que es un codigo que sea soportado por cualquier navegador-->
+    <title>ReactApp</title>
+</head>
+<body>
+    
+    <div id="root"></div><!--creamos un div para que se pueda renderizar la aplicacion-->
+    <div id="edad"></div>
+    <script type="text/babel">//configuramos el escript para que sea procesado por babel
+    
+        const divRoot = document.querySelector('#root')//creamos la referencia
+        const divEdad = document.querySelector('#edad')
+        const nombre = 'eddy'
+        const h1Tag = <h1>Hola soy {nombre} </h1>;//cuando metemos llaves se puede agregar codigo js puro por eso se puso la variable nombre
+        const edad = 22
+        const h1Tag2 = <h1>mi edad es {edad} años</h1>
+
+        ReactDOM.render( h1Tag, divRoot );//renderiza los elementos
+        ReactDOM.render(h1Tag2,divEdad);
+
+    </script>
+</body>
+</html>

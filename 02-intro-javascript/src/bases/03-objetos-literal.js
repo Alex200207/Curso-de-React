@@ -27,7 +27,7 @@ console.log(persona)
 //console.log(persona2)
 
 //recomendado
-const persona2 = {...persona}//usando el operador spred para hacer un clon 
+const persona2 = {...persona}//usando el operador spread para hacer un clon 
 //y extraer las propiedades y asignarselas a un uevo objeto se usa tres puntos
 //y luego el nombre del objeto a clonar
 

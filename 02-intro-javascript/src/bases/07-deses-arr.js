@@ -34,6 +34,7 @@ const useState = (valor) => {
   return [valor, ()=>{console.log('Hola Mundo')}];
 }
 
+// eslint-disable-next-line react-hooks/rules-of-hooks
 const [nombre, setNombre] = useState('Goku')
 
 

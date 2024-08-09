@@ -40,6 +40,7 @@ const useContext = ({clave,nombre,edad, rango ='capitan'}) =>{
 //Asignacion Desestructurante
 //de esta forma podemos extraer objetos anidados y asignarlos a constntes
 //no es muy comun
+// eslint-disable-next-line react-hooks/rules-of-hooks
 const {nombreClave,anios,lati:{lat,lng}} = useContext(persona);
 
 console.log(nombreClave,anios)

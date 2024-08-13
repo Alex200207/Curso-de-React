@@ -14,7 +14,7 @@ const arreglo = [1,2,3,4]
 //arreglo.push(2)
 //arreglo.push(3)
 //arreglo.push(4)
-//arreglo.push(5)
+
 
 /*el opereadoe spread es sumamente utilizado para realizar copias
 lo que hace es extraer la informacion y manda individualmente cada uno de los

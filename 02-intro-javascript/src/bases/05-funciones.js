@@ -44,6 +44,44 @@ const geUsuarioActivo = (nombre) => ({
   username: nombre,
 });
 
-const usuarioActivo = geUsuarioActivo('eddy');
+const usuarioActivo = geUsuarioActivo("eddy");
 
 console.log(usuarioActivo);
+
+//------------------------------------------------
+
+const getSaludar = function (nombre) {
+  //usar funciones de tipo expresion o que usen constante
+  //para que no se pueda modificar
+  return "Hola mundo " + nombre;
+};
+
+console.log(getSaludar("eddy"));
+
+const getSaludar3 = (nombre) => `Hola mundo ${nombre}`;
+
+console.log(getSaludar3("eddy"));
+//puedes hacerlo de esta manera tambien si es una sola linea
+
+//retornan un objeto de manera inplicita
+//-sin return y usando parentesis y llaves
+
+const getUser2 = () => ({
+  uid: "ABC123",
+  username: "El_Papi1502",
+});
+
+console.log(getUser2());
+
+//tarea
+
+//transformar a una funcion de flecha
+//retornar un objeto implicito
+//pruebas
+
+const getUsuariActivo = (nombre) => ({ uid: "ABC567", username: nombre });
+
+const usuarioActivo2 = getUsuariActivo("eddy");
+console.log(usuarioActivo2);
+
+//listo

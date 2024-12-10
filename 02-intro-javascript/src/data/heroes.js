@@ -1,7 +1,7 @@
 //arreglo con muchos objetos
 //import ,export y funcicones comunes
 
- const heroes = [
+  export const heroes = [
 
 //usamos exportaciones por defecto
 //export default [
@@ -31,15 +31,7 @@
         owner: 'Marvel'
     },
   ];
-  //exportar owwers
-const owners = ['DC','Marvel']
 
-//se puede hacer asi y es mas comun cuando
-//hay muchaas exportaciones dentro de un archivo
-export {
-    heroes as default,//especificar por defecto
-    owners,
-}
 
 
  //export default heroes;

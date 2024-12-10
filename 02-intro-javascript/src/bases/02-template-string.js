@@ -11,8 +11,24 @@ const apellido = "Talavera";
 const nombreCompleto = ` ${nombre} ${apellido}`; //forma mas sencilla template strings
 console.log(nombreCompleto);
 
-function getSaludo(nombre) {
-  return " hola " + nombre;
-}
+
 
 console.log(`este es un texto: ${getSaludo(nombre)} `);
+
+let texto = "hola que tal como estas";
+
+console.log(`este es un texto: ${texto}`);
+
+console.log("forma normal de mostrar un texto" + texto);
+
+console.log("otra forma", texto);
+
+console.log(`esta es una suma de 1 + 1: ${1 + 1}`);
+
+
+function getSaludo(nombre) {
+  return ' hola mundo ' + nombre;//pasando un parametro
+}
+
+console.log(`este es un texto: ${getSaludo('eddy')}`) //pasando un argumento
+

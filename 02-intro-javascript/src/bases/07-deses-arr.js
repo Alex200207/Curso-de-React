@@ -40,3 +40,18 @@ const [nombre, setNombre] = useState('Goku')
 
 console.log(nombre);
 setNombre();
+
+//------------------------------------------------------------------------
+
+const personajes2 = ['Goku','Goyo','Naruto']
+
+const [ , ,p4 ] = personajes2;
+
+console.log(p4);
+
+const useState2 = (valor)=> {
+  return [valor, ()=>{console.log('Hola Mundo')}];
+}
+
+
+const [nombre, setNombre] = useState2('Goku');

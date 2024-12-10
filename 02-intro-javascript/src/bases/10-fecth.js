@@ -8,10 +8,12 @@ const peticion = fetch(`https://api.giphy.com/v1/gifs/random?api_key=${apiKey}`)
 peticion
   // Primero, convertimos la respuesta de la API en formato JSON
   .then(resp => resp.json())
+  //metodo json convierte la respuesta en un objeto json
+
   // Luego, extraemos la URL del GIF desde la respuesta JSON
-  .then(({ data }) => {
-    // Desestructuramos el objeto para obtener la URL del GIF original
-    const { url } = data.images.original;
+  .then(({ data }) => {//desestructuramos el objeto para obtener la URL del GIF original
+
+    const { url } = data.images.original;//obtenemos la URL del GIF original
 
     // Creamos un elemento <img> para mostrar el GIF
     const img = document.createElement('img');

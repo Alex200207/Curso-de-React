@@ -41,3 +41,28 @@ const arreglo3 = arreglo2.map( function(numero){//numero va ser los numeros del 
 console.log(arreglo)
 console.log(arreglo2)
 console.log(arreglo3)
+
+//------------------------------------------------------------------------
+
+const array = []
+array.push(1)//modifica el obejto principal no se usa
+array.push(2)
+array.push(3)
+array.push(4)
+array.push(5)
+
+console.log(array)
+
+const array2 = [...array, 6]//usar el operador spread para hacer una copia
+
+console.log(array2)
+
+
+const array3 = array2.map(function(x) {//callback
+    return x * 2
+})//crea un nuevo arreglo con los valores del arreglo multiplicados por 2
+
+console.log(array3)
+
+// si no pones el return de retornara undefined y no se mostrara nada
+

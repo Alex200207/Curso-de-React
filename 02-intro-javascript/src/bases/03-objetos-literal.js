@@ -1,23 +1,20 @@
 //objetos literales (diccionarios) {}
 
 const persona = {
-    nombre:'eddy',
-    apellido:' Stark',
-    edad :45,
-    direccion: {
-        ciudad: 'jalapa',
-        zip:'15',
-        lat:'262',
-        lng:'2626',
-    }
-
-}
-
+  nombre: "eddy",
+  apellido: " Stark",
+  edad: 45,
+  direccion: {
+    ciudad: "jalapa",
+    zip: "15",
+    lat: "262",
+    lng: "2626",
+  },
+};
 
 //console.table(persona)si usamos table podemos ver una tabla
 
-console.log(persona)
-
+console.log(persona);
 
 //no hacer jamas esto para crear un clon
 //const persona2 = persona;haciedno una copia asignacion de referencia
@@ -27,8 +24,29 @@ console.log(persona)
 //console.log(persona2)
 
 //recomendado
-const persona2 = {...persona}//usando el operador spread para hacer un clon 
+const persona2 = { ...persona }; //usando el operador spread para hacer un clon
 //y extraer las propiedades y asignarselas a un uevo objeto se usa tres puntos
 //y luego el nombre del objeto a clonar
 
-console.log(persona2)
+console.log(persona2);
+
+//------------------------------------------------------------
+
+
+//al crear un objeto se crea un prototype que es un objeto padre
+const persona55 = {
+    nombre: 'tony',
+    apellido: 'stark',
+    edad: 45,
+    direccion: {
+        ciudad: 'new york',
+        zip: 123456,
+        lat: 14.3232,
+        lng: 34.9233
+    }
+
+};
+
+const persona3 = {...persona55 };
+
+console.log(persona3);

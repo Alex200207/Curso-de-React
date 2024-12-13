@@ -58,3 +58,7 @@ const getHeroeByIdAsync = (id) =>{
 getHeroeByIdAsync(4)
     .then(heroe => console.log('heroe',heroe))
     .catch( err => console.warn( err ))
+
+
+    //-------------------------------------
+    
